@@ -10,3 +10,9 @@ the second class is the linkedList class that hold one properity for the head no
 - includesL: to sheck if the list contains certain value. the Big O used here is is O(n)
 - to string: to print out the linked list instances; the value of the nodes. the Big O used here is is O(n)
 
+## Code Challenge 06: linked-list-insertions
+in this challenge we had added the following methods: 
+- append: it takes one argumants and adds a new node with the given value to the end of the list.
+- insertBefore: takes two values; the value you want to add and the value you want to make the installation before, and then adds a new node with the given new value immediately before the first node that has the value specified.
+- insertAfter: takes two arguments: value, new value; and then adds a new node with the given new value immediately after the first node that has the value specified.
+

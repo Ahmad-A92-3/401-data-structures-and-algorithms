@@ -11,10 +11,13 @@ public class Main {
         System.out.println(new Main().getGreeting());
 
         LinkedList linkedList = new LinkedList();
-//        System.out.println(linkedList.head);
         linkedList.insert("2");
         linkedList.insert("3");
         linkedList.insert("4");
+        linkedList.append("0");
+        linkedList.insertBefore("2","1");
+        linkedList.insertAfter("2","-1");
+
         System.out.println(linkedList.includes("2"));
         System.out.println(linkedList.to_string());
 

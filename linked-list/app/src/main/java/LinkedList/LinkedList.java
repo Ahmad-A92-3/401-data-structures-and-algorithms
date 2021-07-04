@@ -25,7 +25,6 @@ public class LinkedList {
     public boolean includes(String value){
         Node current = this.head;
         while(current.getNext() != null){
-            System.out.println("curenc"+current.value);
             if (current.value==value){
                 return true;
             }
@@ -49,6 +48,48 @@ public class LinkedList {
         allValues += current.value;
         return allValues;
     }
+
+    public void append(String newvalue){
+        Node current = this.head;
+        Node newNode = new Node(newvalue);
+
+        while(current.getNext() != null){
+            current = current.getNext();
+
+        }
+        current.next= newNode;
+    }
+     public void insertBefore(String v1, String v2){
+        Node newNode = new Node(v2);
+        Node current= this.head;
+        Node previousNode= current;
+        while(  current.getNext() != null ){
+            if (current.value == v1){
+                newNode.next=current;
+                previousNode.next=newNode;
+                break;
+            }
+            previousNode= current;
+            current = current.getNext();
+        }
+
+     }
+    public void insertAfter(String v1, String v2){
+        Node newNode = new Node(v2);
+        Node current= this.head;
+        Node afterCurrent;
+        while(  current.getNext() != null ){
+            if (current.value == v1){
+                afterCurrent= current.getNext();
+                current.next=newNode;
+                newNode.next=afterCurrent;
+                break;
+            }
+            current = current.getNext();
+        }
+
+    }
+
 
 }
 

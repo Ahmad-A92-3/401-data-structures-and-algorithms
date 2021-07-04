@@ -59,4 +59,37 @@ class LinkedListTest {
 
         assertEquals("4<<3<<2",linkedList.to_string());
     }
+    @Test void appendTest(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert("2");
+        linkedList.insert("3");
+        linkedList.insert("4");
+        linkedList.append("0");
+        assertEquals("4<<3<<2<<0",linkedList.to_string(),"append to the end of the list ");
+
+    }
+    @Test void insertBefore(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert("2");
+        linkedList.insert("3");
+        linkedList.insert("4");
+        linkedList.append("0");
+        linkedList.insertBefore("2","1");
+
+        assertEquals("4<<3<<1<<2<<0",linkedList.to_string(),"append before certain item ");
+
+    }
+    @Test void insertAfter(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert("2");
+        linkedList.insert("3");
+        linkedList.insert("4");
+        linkedList.append("0");
+        linkedList.insertBefore("2","1");
+        linkedList.insertAfter("2","-1");
+
+        assertEquals("4<<3<<1<<2<<-1<<0",linkedList.to_string(),"append After certain item ");
+
+    }
+
 }
