@@ -15,4 +15,7 @@ in this challenge we had added the following methods:
 - append: it takes one argumants and adds a new node with the given value to the end of the list.
 - insertBefore: takes two values; the value you want to add and the value you want to make the installation before, and then adds a new node with the given new value immediately before the first node that has the value specified.
 - insertAfter: takes two arguments: value, new value; and then adds a new node with the given new value immediately after the first node that has the value specified.
-
+-  for the whitebord exirsise: 
+   - ! [photo] (codeChallenge-class05.PNG)
+    - [Board link](https://miro.com/app/board/o9J_l9Wc_5c=/).
+    
