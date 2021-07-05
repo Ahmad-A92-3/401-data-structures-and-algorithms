@@ -18,4 +18,10 @@ in this challenge we had added the following methods:
 -  for the whitebord exirsise: 
    - ![photo](codeChallenge-class05.PNG)
     - [Board link](https://miro.com/app/board/o9J_l9Wc_5c=/).
+### Code Challenge: Class 07: 
+in this challenge we created a new method to find a values of node at index k starting from the end of the array list. 
+- for the whiteBoard exersise: 
+   - ![photo](codeChallenge-class07.PNG)
+      - [Board link](https://miro.com/app/board/o9J_l9Wc_5c=/).
+   
     
