@@ -91,5 +91,53 @@ class LinkedListTest {
         assertEquals("4<<3<<1<<2<<-1<<0",linkedList.to_string(),"append After certain item ");
 
     }
+    // lab 07 test
+    // Where k is greater than the length of the linked list
+    @Test
+    public void kthFromEndTest1(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert("1");
+        linkedList.insert("3");
+        linkedList.insert("8");
+        linkedList.insert("2");
+        assertEquals("the k value is bigger than the array size",linkedList.kthFromEnd(5));
+    }
+    // Where k and the length of the list are the same
+    @Test
+    public void kthFromEndTest2(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert("1");
+        linkedList.insert("3");
+        linkedList.insert("8");
+        linkedList.insert("2");
+        assertEquals("2",linkedList.kthFromEnd(3));
+    }
+    // Where k is not a positive integer
+    @Test
+    public void kthFromEndTest3(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert("1");
+        linkedList.insert("3");
+        linkedList.insert("8");
+        linkedList.insert("2");
+        assertEquals("you enter negative value !",linkedList.kthFromEnd(-1));
+    }
+    // Where the linked list is of a size 1
+    @Test
+    public void kthFromEndTest5(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert("1");
 
+        assertEquals("1",linkedList.kthFromEnd(0));
+    }
+    // “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+    @Test
+    public void kthFromEndTest6(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert("1");
+        linkedList.insert("3");
+        linkedList.insert("8");
+        linkedList.insert("2");
+        assertEquals("8",linkedList.kthFromEnd(2));
+    }
 }

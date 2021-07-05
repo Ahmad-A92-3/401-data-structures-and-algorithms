@@ -20,6 +20,8 @@ public class Main {
 
         System.out.println(linkedList.includes("2"));
         System.out.println(linkedList.to_string());
+        System.out.println(linkedList.size());
+        System.out.println(linkedList.kthFromEnd(2));
 
 //        linkedList.head = new Node(1);
 //        Node second = new Node(2);
