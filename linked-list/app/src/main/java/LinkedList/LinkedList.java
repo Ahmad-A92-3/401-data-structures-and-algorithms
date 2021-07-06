@@ -52,11 +52,14 @@ public class LinkedList {
         Node current = this.head;
         Node newNode = new Node(newvalue);
 
-        while(current.getNext() != null){
-            current = current.getNext();
-
+        if (this.head == null){
+            this.head=newNode;
+        }else{
+            while(current.getNext() != null){
+                current = current.getNext();
+            }
+            current.next= newNode;
         }
-        current.next= newNode;
     }
      public void insertBefore(String v1, String v2){
         Node newNode = new Node(v2);
@@ -118,6 +121,9 @@ public class LinkedList {
             return kthValue;
         }
     }
+
+
+
 
 
 }

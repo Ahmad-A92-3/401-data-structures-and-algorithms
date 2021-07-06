@@ -10,22 +10,26 @@ public class Main {
 
         System.out.println(new Main().getGreeting());
 
-        LinkedList linkedList = new LinkedList();
-        linkedList.insert("2");
-        linkedList.insert("3");
-        linkedList.insert("4");
-        linkedList.append("0");
-        linkedList.insertBefore("2","1");
-        linkedList.insertAfter("2","-1");
+        LinkedList list1 = new LinkedList();
+        list1.append("1");
+        list1.append("3");
+        list1.append("2");
+        System.out.println(list1.to_string());
 
-        System.out.println(linkedList.includes("2"));
-        System.out.println(linkedList.to_string());
-        System.out.println(linkedList.size());
-        System.out.println(linkedList.kthFromEnd(2));
+        LinkedList list2 = new LinkedList();
+        list2.append("5");
+        list2.append("9");
+        list2.append("4");
+        System.out.println(list2.to_string());
 
-//        linkedList.head = new Node(1);
-//        Node second = new Node(2);
-//        Node third = new Node(3);
+        MergeLinkedList listZip= new MergeLinkedList();
+//        listZip.zipLists(list1,list2);
+        listZip.zipLists(list1,list2);
+
+//        System.out.println(listZip.to_string());
+
+
+
 
 
     }

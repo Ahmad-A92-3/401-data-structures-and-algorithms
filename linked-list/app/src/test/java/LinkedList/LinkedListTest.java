@@ -130,7 +130,6 @@ class LinkedListTest {
 
         assertEquals("1",linkedList.kthFromEnd(0));
     }
-    // “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
     @Test
     public void kthFromEndTest6(){
         LinkedList linkedList = new LinkedList();
@@ -140,4 +139,5 @@ class LinkedListTest {
         linkedList.insert("2");
         assertEquals("8",linkedList.kthFromEnd(2));
     }
+
 }
