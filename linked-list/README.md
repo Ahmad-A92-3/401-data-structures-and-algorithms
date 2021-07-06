@@ -24,4 +24,16 @@ in this challenge we created a new method to find a values of node at index k st
    - ![photo](codeChallenge-class07.PNG)
       - [Board link](https://miro.com/app/board/o9J_l9Wc_5c=/).
    
-    
+### Code Challenge: Class 08
+in this challenge new class inherated the properity and methods of the Linked list class that include the MergeLinkedList function that take two linkelist and merged them as represent in the following example:
+- `zipLists(list1, list2)`
+-  list1	Arg 	
+`head -> [1] -> [3] -> [2] -> X`		
+- list2
+  `head -> [5] -> [9] -> [4] -> X`
+- Output
+  `head -> [1] -> [5] -> [3] -> [9] -> [2] -> [4] -> X`
+
+- for the whiteBoard exersise:
+    - ![photo](codeChallenge-class08.PNG)
+        - [Board link](https://miro.com/app/board/o9J_l9Wc_5c=/).
