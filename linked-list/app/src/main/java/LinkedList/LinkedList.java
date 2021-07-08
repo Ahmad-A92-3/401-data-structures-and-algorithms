@@ -121,6 +121,30 @@ public class LinkedList {
             return kthValue;
         }
     }
+    public boolean palindrome(){
+        StringBuilder  commu1=new StringBuilder() ;
+        StringBuilder  commu2=new StringBuilder() ;
+        Node current=this.head;
+        int i=0;
+        while(current !=null){
+            if (i< this.size()/2){
+                commu1 .append(current.value) ;
+            }else if(i >this.size()/2){
+                commu2 .append(current.value) ;
+            }else if (i== this.size()/2 && this.size()%2 ==0){
+                commu2.append(current.value) ;
+            }
+            current=current.getNext();
+            i +=1;
+        }
+        System.out.println(commu1);
+        System.out.println(commu2);
+        StringBuilder vb = new StringBuilder();
+        vb= commu2.reverse();
+
+        return commu1.toString().equals(vb.toString()) ;
+
+    }
 
 
 
