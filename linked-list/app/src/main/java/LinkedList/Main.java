@@ -13,8 +13,12 @@ public class Main {
         LinkedList list1 = new LinkedList();
         list1.append("1");
         list1.append("3");
-        list1.append("2");
+//        list1.append("5");
+        list1.append("3");
+        list1.append("1");
         System.out.println(list1.to_string());
+        System.out.println(list1.size()/2);
+        System.out.println(list1.palindrome());
 
         LinkedList list2 = new LinkedList();
         list2.append("5");
