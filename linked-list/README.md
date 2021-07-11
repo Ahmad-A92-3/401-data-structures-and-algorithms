@@ -50,6 +50,12 @@ in this lab we created a two class; QueueLinkedlist and StacklinkedList to simul
     - pop: returns the value from node from the top of the stack, removes the node from the top of the stack, and raise exception when called on empty stack.
     - peek: returns value of the node located at the top of the stack, and raise exception when called on empty stack.
     - isEmpty: returns: Boolean indicating whether or not the stack is empty. 
+### Code Challenge: Class 11
+to solve this challenge I had created a new class PseudoQueue include: 
+- two instance of StacklinkedList class that will use to create and manage the queue. 
+- enqueue method: that a value and added it to the begining of the queue. 
+- dequeue method will pop the value at the end of the queue. 
 
-    
-
+- for the whiteBoard exersise:
+    - ![photo](codeChallenge-class09.PNG)
+        - [Board link](https://miro.com/app/board/o9J_l9Wc_5c=/).

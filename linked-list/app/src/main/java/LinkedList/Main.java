@@ -1,5 +1,7 @@
 package LinkedList;
-import LinkedList.LinkedList;
+import Queue.PseudoQueue;
+import Stack.StackLinkedList;
+
 
 public class Main {
 
@@ -31,19 +33,30 @@ public class Main {
 
         /* this is stackLinkedList*/
 
-        StackLinkedList<Integer> sl= new StackLinkedList<Integer>();
-        // pop+push method
-        sl.push(5);
-        sl.push(6);
-        sl.content();
-        System.out.println(sl.pop());
-        System.out.println("sd"+sl.content());
-        System.out.println(sl.pop());
-        // is empty+ peek
-        System.out.println(sl.isEmpty());
-        sl.push(5);
-        System.out.println(sl.isEmpty());
-        System.out.println(sl.peek());
+//        StackLinkedList<Integer> sl= new StackLinkedList<Integer>();
+//        // pop+push method
+//        sl.push(5);
+//        sl.push(6);
+//        sl.content();
+//        System.out.println(sl.pop());
+//        System.out.println("sd"+sl.content());
+//        System.out.println(sl.pop());
+//        // is empty+ peek
+//        System.out.println(sl.isEmpty());
+//        sl.push(5);
+//        System.out.println(sl.isEmpty());
+//        System.out.println(sl.peek());
+        PseudoQueue<Integer> ps = new PseudoQueue<>();
+        ps.enqueue(5);
+        ps.enqueue(10);
+        ps.enqueue(15);
+        System.out.println(ps.content());
+        System.out.println(ps.dequeue());
+        System.out.println(ps.content());
+
+
+
+
 
 
 
