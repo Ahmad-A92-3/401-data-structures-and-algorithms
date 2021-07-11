@@ -1,4 +1,6 @@
-package LinkedList;
+package Queue;
+
+import LinkedList.NodeT;
 
 public class QueueLinkedLIst<T> {
     private NodeT<T> front;

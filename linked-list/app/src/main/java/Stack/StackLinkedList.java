@@ -1,4 +1,6 @@
-package LinkedList;
+package Stack;
+
+import LinkedList.NodeT;
 
 public class StackLinkedList <T> {
     private NodeT<T> top;
