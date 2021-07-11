@@ -37,3 +37,19 @@ in this challenge new class inherated the properity and methods of the Linked li
 - for the whiteBoard exersise:
     - ![photo](codeChallenge-class08.PNG)
         - [Board link](https://miro.com/app/board/o9J_l9Wc_5c=/).
+    
+### Code Challenge: Class 10: Stack and a Queue Implementation:
+in this lab we created a two class; QueueLinkedlist and StacklinkedList to simulate the queue and slack data structure respectively. 
+- QueueLinkedlist includes the following methods: 
+    - enqueue: add new  node to the back of the queue. 
+    - dequeue: it returns the value from node from the front of the queue, and removes the node from the front of the queue.
+    - peek: it returns value of the node located at the front of the queue, and raise exception when called on empty stack.
+    - isEmpty: returns: Boolean indicating whether or not the queue is empty. 
+-StacklinkedList: 
+    - push: add new  node to the top of the stack.
+    - pop: returns the value from node from the top of the stack, removes the node from the top of the stack, and raise exception when called on empty stack.
+    - peek: returns value of the node located at the top of the stack, and raise exception when called on empty stack.
+    - isEmpty: returns: Boolean indicating whether or not the stack is empty. 
+
+    
+

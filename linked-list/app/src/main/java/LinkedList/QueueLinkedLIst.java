@@ -36,4 +36,11 @@ public class QueueLinkedLIst<T> {
         return front==null;
    }
 
+    @Override
+    public String toString() {
+        return "QueueLinkedLIst{" +
+                "front=" + front.getValue() +
+                ", back=" + back.getValue() +
+                '}';
+    }
 }
