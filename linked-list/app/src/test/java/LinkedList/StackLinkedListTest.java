@@ -29,7 +29,18 @@ public class StackLinkedListTest {
         sl.push(6);
         sl.pop();
         sl.pop();
-        assertEquals("The stack is empty",sl.pop());
+        NodeT <String> result= new NodeT<>("The stack is empty");
+
+
+        assertEquals(result.getValue(),sl.pop());
+    }
+
+    @Test
+    public void peekTest(){
+        sl.push(5);
+        sl.push(6);
+        assertEquals(6,sl.peek());
+
     }
 
 
