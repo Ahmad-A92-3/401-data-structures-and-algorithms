@@ -57,5 +57,15 @@ to solve this challenge I had created a new class PseudoQueue include:
 - dequeue method will pop the value at the end of the queue. 
 
 - for the whiteBoard exersise:
-    - ![photo](codeChallenge-class09.PNG)
+    - ![photo](codeChallenge-class11.PNG)
+        - [Board link](https://miro.com/app/board/o9J_l9Wc_5c=/).
+### Code Challenge: Class 12
+Create a class called AnimalShelter which holds only dogs and cats.
+The shelter operates using a first-in, first-out approach.
+Implement the following methods:
+- enqueue: accept animal argument, which can be either a dog or a cat object.
+  -dequeue: accept pref arguments, which can be either "dog" or "cat". it return: either a dog or a cat, based on preference, or If pref is not "dog" or "cat" then return null.
+
+- for the whiteBoard exersise:
+    - ![photo](codeChallenge-class12.PNG)
         - [Board link](https://miro.com/app/board/o9J_l9Wc_5c=/).
