@@ -69,3 +69,9 @@ Implement the following methods:
 - for the whiteBoard exersise:
     - ![photo](codeChallenge-class12.PNG)
         - [Board link](https://miro.com/app/board/o9J_l9Wc_5c=/).
+### Code Challenge: Class 13 Multi-bracket Validation.
+
+in this challenge we created a method that validate brackets
+- for the whiteBoard exersise:
+    - ![photo](codeChallenge-class13.PNG)
+        - [Board link](https://miro.com/app/board/o9J_l9Wc_5c=/).
