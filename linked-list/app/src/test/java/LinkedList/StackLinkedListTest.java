@@ -5,35 +5,31 @@ import Stack.StackLinkedList;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class StackLinkedListTest {
     StackLinkedList<Integer> sl= new StackLinkedList<Integer>();
     @BeforeEach
     public  void starup(){
+        sl.push(5);
+        sl.push(6);
 
     }
     @Test
      public void pushTest1and2(){
-        sl.push(5);
-        sl.push(6);
+
         assertEquals("[ 6 ] << [ 5 ] <<  [null]",sl.content());
     }
     @Test
     public void popTest(){
-        starup();
         assertEquals(6,sl.pop());
     }
     @Test
     public void popTestEmpty(){
-        sl.push(5);
-        sl.push(6);
         sl.pop();
         sl.pop();
-        NodeT <String> result= new NodeT<>("The stack is empty");
+        assertTrue(sl.isEmpty());
 
-
-        assertEquals(result.getValue(),sl.pop());
     }
 
     @Test
