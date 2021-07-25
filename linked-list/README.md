@@ -89,4 +89,8 @@ The following methods created to support this kind of trees as follows:
                - Add: it is accept value Arguments, and then decide the correct place to the new node based on the Binary Search Tree definition. note: a support private method (traverse) created to use inside this method.   
                 - Contains: it accept value and return true if it exists at the tree. 
 
- 
+ #### Code Challenge: Class 16: 
+we created a new method for the binary tree class (max) that Find the maximum value stored in the tree
+- for the whiteBoard exersise:
+    - ![photo](codeChallenge-class16.PNG)
+        - [Board link](https://miro.com/app/board/o9J_l9Wc_5c=/).

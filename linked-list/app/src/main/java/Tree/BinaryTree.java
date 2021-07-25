@@ -6,6 +6,7 @@ public class BinaryTree<T> {
     private String inOrderTree="";
     private String PostOrderTree="";
 
+
     public BinaryTree(T value) {
         Node<T> root= new Node<T>(value);
         this.root = root;
@@ -41,9 +42,26 @@ public class BinaryTree<T> {
             PostOrder(node.getRight());
             PostOrderTree +="<<"+node.getValue();
             System.out.println(node.getValue());
-
         }
         return PostOrderTree;
+
+    }
+
+    public int max(){
+        int maxValue= (Integer) root.getValue();
+
+        return findMax(root,maxValue);
+    }
+
+    private int findMax(Node node, int maxValue){
+        if (node !=null){
+            if ( maxValue < (Integer) node.getValue()){
+                maxValue= (Integer) node.getValue();
+            }
+            findMax(node.getLeft(),maxValue);
+            findMax(node.getRight(),maxValue);
+        }
+        return maxValue;
 
     }
 
