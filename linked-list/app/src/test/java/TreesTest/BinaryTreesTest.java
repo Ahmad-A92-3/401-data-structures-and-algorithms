@@ -25,13 +25,11 @@ public class BinaryTreesTest {
     @Test
     public void addLeftTest(){
         assertEquals(3,binaryTest.getRoot().getLeft().getValue());
-
     }
 
     @Test
     public void addRightTest(){
         assertEquals(2,binaryTest.getRoot().getRight().getValue());
-
     }
 
     @Test
@@ -48,5 +46,8 @@ public class BinaryTreesTest {
     void PostOrderTest(){
         assertEquals("<<1<<3<<2<<5",binaryTest.PostOrder(binaryTest.getRoot()));
     }
-
+    @Test
+    void maxTest(){
+        assertEquals(5,binaryTest.max());
+    }
 }
