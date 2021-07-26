@@ -50,4 +50,8 @@ public class BinaryTreesTest {
     void maxTest(){
         assertEquals(5,binaryTest.max());
     }
+    @Test
+    void breadthFirstTest(){
+        assertEquals("[5, 3, 2, 1]",binaryTest.breadthFirst());
+    }
 }
