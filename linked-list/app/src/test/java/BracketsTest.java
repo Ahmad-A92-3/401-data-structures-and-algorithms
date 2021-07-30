@@ -9,11 +9,15 @@ public class BracketsTest {
 
     @Test
     void ExpectTrue(){
-        assertTrue(bracket.validateBrackets("()[[Extra Characters]]"));
+        assertTrue(bracket.validateBrackets2("()[[Extra Characters]]"));
     }
     @Test
     void ExpectFale(){
-        assertFalse(bracket.validateBrackets("[({}]"));
+        assertFalse(bracket.validateBrackets2("[({}]"));
+    }
+    @Test
+    void ExpectFale2(){
+        assertFalse(bracket.validateBrackets2("{[}]"));
     }
 
 }

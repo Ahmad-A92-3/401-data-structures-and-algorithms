@@ -94,3 +94,9 @@ we created a new method for the binary tree class (max) that Find the maximum va
 - for the whiteBoard exersise:
     - ![photo](codeChallenge-class16.PNG)
         - [Board link](https://miro.com/app/board/o9J_l9Wc_5c=/).
+
+#### Code Challenge: Class 17:
+write a method that  Return: list of all values in the tree, in the order they were encountered as shown in the diagram beside
+- for the whiteBoard exersise:
+    - ![photo](codeChallenge-class17.PNG)
+        - [Board link](https://miro.com/app/board/o9J_l9Wc_5c=/).
