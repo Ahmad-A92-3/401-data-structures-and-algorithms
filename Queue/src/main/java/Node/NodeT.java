@@ -1,6 +1,6 @@
-package LinkedList;
+package Node;
 
-public class NodeT <T> {
+public class NodeT<T> {
     private T value;
    private  NodeT<T> next;
 
