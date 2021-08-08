@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.StackTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-08-01T06:23:49" hostname="DESKTOP-RJPO0GQ" time="0.224">
+  <properties/>
+  <testcase name="popTest()" classname="app.StackTest" time="0.089"/>
+  <testcase name="popTestEmpty()" classname="app.StackTest" time="0.003"/>
+  <testcase name="peekTest()" classname="app.StackTest" time="0.002"/>
+  <testcase name="pushTest1and2()" classname="app.StackTest" time="0.123"/>
+  <system-out><![CDATA[[ 6 ] << [ 5 ] <<  [null]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
