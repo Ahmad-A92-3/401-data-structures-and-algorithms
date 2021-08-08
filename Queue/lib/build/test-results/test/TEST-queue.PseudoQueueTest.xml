@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="queue.PseudoQueueTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-01T07:09:54" hostname="DESKTOP-RJPO0GQ" time="0.122">
+  <properties/>
+  <testcase name="dequeueTest()" classname="queue.PseudoQueueTest" time="0.073"/>
+  <testcase name="enqueTest()" classname="queue.PseudoQueueTest" time="0.047"/>
+  <system-out><![CDATA[[ 15 ] << [ 10 ] << [ 5 ] <<  [null]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
