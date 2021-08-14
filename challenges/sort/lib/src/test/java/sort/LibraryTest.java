@@ -7,8 +7,20 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
+    private Library library;
     @Test void someLibraryMethodReturnsTrue() {
         Library classUnderTest = new Library();
         assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
     }
+    @BeforeEach
+    public void pickUp(){
+        library= new Library();
+        int[] array=  {8,4,23,42,16,15};
+    }
+    @Test
+    void selectionSortTest(){
+        library.SelectionSort(array);
+        System.out.println(array[0])
+    }
+
 }
