@@ -15,6 +15,17 @@ public class Library {
         System.out.println(array[0]);
         System.out.println(array[5]);
 
+        // quick sort
+       int []array2=  {8,4,23,42,16,15};
+        quickSort(array2,0,5);
+        System.out.println("quick sort");
+
+        System.out.println(array2[0]);
+        System.out.println(array2[5]);
+//         System.out.println(array2.toArray);
+
+
+
 
     }
 
@@ -75,6 +86,39 @@ public class Library {
         }
 
     }
+
+    static void swap (int [] arr, int i, int j){
+        int temp = arr[i];
+        arr[i]= arr[j];
+        arr[j]=temp;
+
+    }
+    static int partition(int [] arr, int low, int high){
+        int pivote = high;
+
+        int i = low-1;
+        for (int j= low; j<=high; j++){
+            if (arr[j] < arr[pivote]){
+                i++;
+                swap(arr,i,j);
+            }
+        }
+        swap(arr, i+1,high);
+        return (i+1);
+
+    }
+
+    static void quickSort(int [] arr, int low, int high){
+        if (low<high){
+            int x = partition(arr, low, high);
+
+            quickSort(arr,low, x-1);
+            quickSort(arr,x+1, high);
+
+        }
+    }
+
+
 
 
 }
