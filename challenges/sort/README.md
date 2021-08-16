@@ -8,7 +8,7 @@ in this challenge we createdcreate sort merge; on which merge sort is one of the
 - [WhiteBoarde Link](https://miro.com/app/board/o9J_l9Wc_5c=/)
 - ![image](whiteBoard-CodeChallenge27.PNG)
 
-### Code Challenge 28
+### Code Challenge 28&29
 in this challenge we created a new method to sort an array,which is the quick sort. QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot
 - [WhiteBoarde Link](https://miro.com/app/board/o9J_l9Wc_5c=/)
 - ![image](whiteBoard-CodeChallenge28.PNG)
