@@ -5,6 +5,8 @@ package hashtable;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import tree.BinarySearchTree;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
@@ -53,6 +55,21 @@ class LibraryTest {
     void repeatWordTest2(){
         String result= library.repeatedWord("It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only...");
         assertEquals("it",result);
+    }
+
+    // test of code challenge 32
+    @ Test
+    void intersectionTest(){
+        BinarySearchTree tree1 = new BinarySearchTree(150);
+        tree1.Add(100);
+        tree1.Add(250);
+
+        BinarySearchTree tree2 = new BinarySearchTree(150);
+        tree2.Add(100);
+        tree2.Add(70);
+
+        assertEquals("100", library.intersection(tree1,tree2).get(1));
+
     }
 
 }
