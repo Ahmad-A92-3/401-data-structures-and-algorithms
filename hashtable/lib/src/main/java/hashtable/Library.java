@@ -3,8 +3,30 @@
  */
 package hashtable;
 
+import java.util.HashMap;
+import java.util.Locale;
+
 public class Library {
     public boolean someLibraryMethod() {
         return true;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(repeatedWord("It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York..."));
+    }
+    // code challenge 31
+    static String repeatedWord( String data){
+        String [] lineWordList= data.split(" ");
+        HashTable<String,Integer> words= new HashTable<>();
+
+        for (String item: lineWordList){
+            if ( !words.contain(item.toLowerCase(Locale.ROOT))){
+                words.add(item.toLowerCase(Locale.ROOT),1);
+            }else{
+                return item;
+            }
+
+        }
+        return "no repeat word at the sentences";
     }
 }
