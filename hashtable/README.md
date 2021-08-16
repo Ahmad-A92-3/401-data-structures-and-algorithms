@@ -4,4 +4,10 @@ the hashCode class use hashNode class to generate a node holds the buckets (key,
 - add: takes two arguments(key, value), and then hash the key, and add the key and value pair to the table, handling collisions as needed.
 - get: takes one argument(key), and returns the value associated with that key in the table
 - contains: takes one argument(key), and returns true or false based on key exists in the table already.
-- hash: takes one argument(key), and returns Index in the collection for that key
+- hash: takes one argument(key), and returns Index in the collection for that key.
+
+
+###  Code Challenge: Class 31
+ in this code challenge, we have created a function called repeated word that finds the first word to occur more than once in a string
+ - [white board](codeChallenge30.png)
+ -  ![Link](https://miro.com/app/board/o9J_l9Wc_5c=/)
