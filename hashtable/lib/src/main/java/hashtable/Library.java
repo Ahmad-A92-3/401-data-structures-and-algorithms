@@ -3,6 +3,10 @@
  */
 package hashtable;
 
+import tree.BinarySearchTree;
+import tree.BinaryTree;
+
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Locale;
 
@@ -13,6 +17,17 @@ public class Library {
 
     public static void main(String[] args) {
         System.out.println(repeatedWord("It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York..."));
+
+        // intersection
+        BinarySearchTree tree1 = new BinarySearchTree(150);
+        tree1.Add(100);
+        tree1.Add(250);
+
+        BinarySearchTree tree2 = new BinarySearchTree(150);
+        tree2.Add(100);
+        tree2.Add(70);
+        System.out.println(intersection(tree1,tree2));
+
     }
     // code challenge 31
     static String repeatedWord( String data){
@@ -28,5 +43,37 @@ public class Library {
 
         }
         return "no repeat word at the sentences";
+    }
+
+    static  ArrayList<String> intersection (BinarySearchTree Tree1, BinarySearchTree Tree2 ){
+
+        String [] Tree1Array= Tree1.inOrder(Tree1.getRoot()).split("<<");
+        String [] Tree2Array= Tree2.inOrder(Tree2.getRoot()).split("<<");
+
+        HashTable<String,Integer> compiles= new HashTable<>();
+
+        ArrayList<String> result = new ArrayList<>();
+
+        for ( String item: Tree1Array){
+            if (! compiles.contain(item)){
+                compiles.add(item,1);
+            }else{
+                compiles.add(item,compiles.get(item)+1);
+            }
+        }
+
+        for ( String i: Tree2Array){
+            if (! compiles.contain(i)){
+                compiles.add(i,1);
+            }else{
+
+                compiles.add(i,compiles.get(i)+1);
+                result.add(i);
+
+            }
+        }
+        return  result;
+
+
     }
 }

@@ -10,4 +10,10 @@ the hashCode class use hashNode class to generate a node holds the buckets (key,
 ###  Code Challenge: Class 31
  in this code challenge, we have created a function called repeated word that finds the first word to occur more than once in a string
  - [white board](codeChallenge30.png)
+ - ![Link](https://miro.com/app/board/o9J_l9Wc_5c=/)
+ 
+
+###  Code Challenge: Class 32
+ in this code challenge, we have created a function called intersection  that finds the common values between two trees. 
+ - [white board](codeChallenge32.png)
  -  ![Link](https://miro.com/app/board/o9J_l9Wc_5c=/)
