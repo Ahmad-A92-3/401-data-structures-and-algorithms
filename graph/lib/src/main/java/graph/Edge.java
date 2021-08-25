@@ -1,5 +1,4 @@
 package graph;
-import main.java.graph.Vertix;
 
 
 public class Edge {
