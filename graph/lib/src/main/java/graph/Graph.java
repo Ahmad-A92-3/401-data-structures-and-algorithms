@@ -2,9 +2,9 @@ package graph;
 
 import java.util.ArrayList;
 import java.util.List;
-import main.java.graph.Vertix;
 
 public class Graph {
+
     public ArrayList<Vertix> vertices = new ArrayList<>();
     public ArrayList<Edge> edges = new ArrayList<>();
 

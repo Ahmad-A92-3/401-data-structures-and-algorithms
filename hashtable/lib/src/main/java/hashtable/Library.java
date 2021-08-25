@@ -17,7 +17,7 @@ public class Library {
     }
 
     public static void main(String[] args) {
-        System.out.println(repeatedWord("It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York..."));
+        System.out.println(repeatedWord("Taco cat ate a taco"));
 
         // intersection
         BinarySearchTree tree1 = new BinarySearchTree(150);
